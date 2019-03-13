@@ -1,0 +1,26 @@
+Este es un ejemplo de multiplexion de pantallas
+es un distpatcher de agua en donde por medio de parametros dados enfría o calienta agua 
+el calenton o cooler estan representados con los leds 
+
+para la multiplexion las pantallas se enlazan punto a punto a excepcion de el pin que las hace encender
+por medio del codigo hacemos que en cada momento que queramos ver un numero encendamos solo la pantalla que queremos 
+
+así enviando el mismo numero pero mostrandolo en diferente diaplay, por ejemplo 
+
+si tenemos un 10 el que queremos mostrar, la pantalla del lado izq debe mostrar el numero 1 y la del lado derecho el numero 0 
+
+por lo tanto para poder hacer esto con las pantallas enlazadas el codigo nos extraer los decimales y despues los enteros 
+
+dando por ejemplo en la primera enviada 1 y posteriormente el 0 
+
+teninedo esto en cuenta nuestro algoritmo para prender y apagar las pantallas va a enviar el mismo numero al mismo timepo a ambas pantallas pero 
+las va a encender en diferente ocacion,
+
+en el ejemplo y sabiendo lo anterior cunado nos lleguen los decimales, estos se van a visualizar en la pantalla izq, por lo tanto debemos encender
+el pin de la pantalla izq para mostrar solo el uno en esa pantalla
+
+lo mismo para los enteros, dando así que la pantalla logre mostrar el decimal con su entero acompañante sin necesidad de dividir ambas pantallas indiviaulmente
+
+lo sensores de temperatura solo sensan y nos retornan los valores de temperatura
+
+ 
